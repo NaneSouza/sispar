@@ -4,7 +4,9 @@ import Home from "../../assets/Dashboard/home header.png";
 import Seta from "../../assets/Dashboard/Vector.png";
 import Deletar from "../../assets/Solicitacao/deletar.png";
 import Lixeira from "../../assets/Solicitacao/lixeira.png";
-import Motivo from "../../assets/Solicitacao/motivo.png"
+import Motivo from "../../assets/Solicitacao/motivo.png";
+import Check from "../../assets/Solicitacao/check.png"
+import Cancelar from "../../assets/Solicitacao/x.png"
 function Solicitacao() {
   return (
     <div className={styles.layoutSolicitacao}>
@@ -138,7 +140,6 @@ function Solicitacao() {
             </div>
           </form>
 
-         
           <table>
             <thead>
               <tr>
@@ -163,12 +164,18 @@ function Solicitacao() {
 
             <tbody>
               <tr>
-                <td> <img src={Lixeira} alt="ícone da lixeira" /></td>
+                <td>
+                  {" "}
+                  <img src={Lixeira} alt="ícone da lixeira" />
+                </td>
                 <td>Samuel Prata</td>
                 <td>VnW</td>
                 <td>10</td>
                 <td>12/08/23</td>
-                <td> <img src={Motivo} alt="ícone do motivo" /></td>
+                <td>
+                  {" "}
+                  <img src={Motivo} alt="ícone do motivo" />
+                </td>
                 <td>Gosta muito de pagode </td>
                 <td>Tomar muita água</td>
                 <td>200</td>
@@ -182,12 +189,18 @@ function Solicitacao() {
               </tr>
 
               <tr>
-                <td> <img src={Lixeira} alt="ícone da lixeira" /></td>
+                <td>
+                  {" "}
+                  <img src={Lixeira} alt="ícone da lixeira" />
+                </td>
                 <td>Karinne</td>
                 <td>VnW</td>
                 <td>5</td>
                 <td>10/03/24</td>
-                <td> <img src={Motivo} alt="ícone do motivo" /></td>
+                <td>
+                  {" "}
+                  <img src={Motivo} alt="ícone do motivo" />
+                </td>
                 <td>Alunas do VnW </td>
                 <td>Ser Mãezona</td>
                 <td>100</td>
@@ -201,12 +214,18 @@ function Solicitacao() {
               </tr>
 
               <tr>
-                <td> <img src={Lixeira} alt="ícone da lixeira" /></td>
+                <td>
+                  {" "}
+                  <img src={Lixeira} alt="ícone da lixeira" />
+                </td>
                 <td>João</td>
                 <td>VnW</td>
                 <td>12</td>
                 <td>01/04/23</td>
-                <td> <img src={Motivo} alt="ícone do motivo" /></td>
+                <td>
+                  {" "}
+                  <img src={Motivo} alt="ícone do motivo" />
+                </td>
                 <td>Consulta Otorrino</td>
                 <td>Cumprimentar acima dB adequados </td>
                 <td>250</td>
@@ -220,12 +239,18 @@ function Solicitacao() {
               </tr>
 
               <tr>
-                <td> <img src={Lixeira} alt="ícone da lixeira" /></td>
+                <td>
+                  {" "}
+                  <img src={Lixeira} alt="ícone da lixeira" />
+                </td>
                 <td>Joy</td>
                 <td>VnW</td>
                 <td>6</td>
                 <td>14/02/22</td>
-                <td> <img src={Motivo} alt="ícone do motivo" /></td>
+                <td>
+                  {" "}
+                  <img src={Motivo} alt="ícone do motivo" />
+                </td>
                 <td>Alunos do VnW </td>
                 <td>Aconselhar</td>
                 <td>300</td>
@@ -237,10 +262,38 @@ function Solicitacao() {
                 <td>40</td>
                 <td>400</td>
               </tr>
-
             </tbody>
-
           </table>
+
+          <div className={styles.grupo3}>
+            <div className={styles.grupo3__titulo}>
+
+            <div className={styles.totalFat}>
+              <label> Total Faturado</label>
+              <input type="number" name="" id="" />
+            </div>
+
+            <div className={styles.totalDesp}>
+              <label> Total Despesa</label>
+              <input type="number" name="" id="" />
+            </div>
+
+            <div className={styles.botoesG3}>
+            <button className={styles.botaoEnviar}>
+                  {" "}
+                  <img src={Check} alt="" /> Enviar para Análise
+                </button>
+
+                <button className={styles.botaoCancel}>
+                  {" "}
+                  <img src={Cancelar} alt="" /> Cancelar Solicitação
+                </button> 
+                </div>
+                </div>
+              
+
+
+          </div>
         </main>
       </div>
     </div>

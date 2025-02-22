@@ -209,7 +209,7 @@ function Solicitacao() {
                 <td> <img src={Motivo} alt="ícone do motivo" /></td>
                 <td>Consulta Otorrino</td>
                 <td>Cumprimentar acima dB adequados </td>
-                <td>500</td>
+                <td>250</td>
                 <td>5</td>
                 <td>3</td>
                 <td>8</td>

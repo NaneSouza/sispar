@@ -1,16 +1,33 @@
 .layoutSolicitacao {
   display: flex;
+  justify-content: center;
 }
 
 .containerPrincipalSolicitacao {
   width: 95vw;
+  
 }
 
 .headerSolicitacao {
-  border: solid red;
-  width: 25vw;
+  width: 100%;
   display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1rem;
 }
+
+
+img {
+  height: 20px;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #23282f;
+}
+
 
 .mainSolicitacao {
   width: 100%;
@@ -19,14 +36,16 @@
 .formSolicitacao {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 //Estilizzação padrão para os inputs, select , label e textarea
 
 label {
-  font-weight: 700;
-  font-size: 1rem;
-  color: #23282f;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #191a1d;
 }
 
 input,
@@ -36,13 +55,16 @@ textarea {
   border: solid #cbd4e1 0.8px;
   height: 4vh;
   width: 100%;
+  padding: 8px;
+  font-size: 0.9rem;
 }
+
+
 
 //Estilizção do grupo1
 .grupo1 {
   width: 35%;
   height: 25vh;
-  border: solid green;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,8 +106,8 @@ textarea {
 //Estilizção do grupo2
 
 .grupo2 {
-  border: solid;
-  width: 60%;
+
+  width: 62%;
   height: 25vh;
   display: flex;
   justify-content: space-between;
@@ -94,17 +116,14 @@ textarea {
 }
 
 .inputData {
-  border: solid green;
   width: 20%;
 }
 
 .tipoDeDespesas {
-  border: solid blue;
   width: 30%;
 }
 
 .centroDeCusto {
-  border: solid purple;
   width: 45%;
 }
 
@@ -112,7 +131,6 @@ textarea {
 .divisoes,
 .pep,
 .distancia {
-  border: solid red;
   width: 8%;
 }
 
@@ -120,12 +138,10 @@ textarea {
 .valorKm,
 .valorFaturado,
 .despesa {
-  border: solid pink;
   width: 11%;
 }
 
 .botoes {
-  border: solid red;
   width: 15%;
   display: flex;
   justify-content: space-evenly;
@@ -134,104 +150,131 @@ textarea {
     background-color: #001a3d;
     color: #ffffff;
     width: 5vw;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #4e8dd5;
+    }
   }
+
+
   .botaoDeletar {
     width: 2vw;
     background-color: #00bedd;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #4e8dd5;
+    }
   }
 }
 
 //Estilização da tabela
-table{
-    width: 100%;
-    border: solid;
-border-collapse:collapse;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
 }
-
 
 //Cabeçalho
-th{
-
-    background-color: #CBD4E1;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #23282F;
+th, td {
+  border: 1px solid #cbd4e1;
+  text-align: center;
+  padding: 10px;
 }
 
-
-th,td{
-    border: solid;
-    text-align: center;
+th {
+  background-color: #f4f6f8;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #23282f;
 }
 
 //Estilização Grupo 3
 
-
 .grupo3 {
-  width: 100%;
-  height: 25vh;
-  border: solid rgb(70, 42, 5);
+width: 100%;
+  height: auto;
   display: flex;
-  // justify-content: center;
-  // align-items: center;
-
-
-}
-
-grupo3__titulo {
-  width: 100%;
-  height: 25vh;
-  border: solid rgb(38, 176, 176);
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // flex-wrap: wrap;
-}
-
-.botoesG3{
-  width: 100%;
-  height: 25vh;
-  border: solid rgb(160, 39, 148);
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-
-}
-
-
-
-
-
-
-.totalFat, .totalDesp{
-  border: solid tomato;
-  width: 100%;
-  height: 25vh;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-
-}
-
-
-
-.botaoEnviar{
-color: #ffffff;
-width: 45%;
-  height: 5vh;
-  border: solid rgb(69, 27, 196);
-  display: flex;
-  justify-content: center;
+  justify-content:space-evenly;
   align-items: center;
-
 }
 
-.botaoCancel{
-  color: #ffffff;
-  width: 45%;
-  height: 5vh;
-  border: solid rgb(26, 130, 45);
+.grupo3__titulo {
+  width: 100%;
+  height: auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  flex-wrap: wrap; // Permitir quebra de linha em telas menores
+  gap: clamp(10px, 2vw, 20px); // gap responsivo
+  margin-top: 1rem;
+}
+
+.totalFat,
+.totalDesp {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: clamp(120px, 15vw, 200px); // Responsivo: mínimo 120px, máximo 200px
+
+  label {
+    font-size: clamp(0.8rem, 1vw, 0.9rem);
+    color: #23282f;
+    font-weight: 500;
+  }
+
+  input {
+    height: 36px;
+    border-radius: 6px;
+    border: 1px solid #cbd4e1;
+    padding: 8px;
+    font-size: clamp(0.8rem, 1vw, 0.9rem); // Responsivo
+    text-align: right;
+    background-color: #f4f6f8;
+    color: #23282f;
+    width: 60%; // Adaptativo
+  }
+}
+
+.botoesG3 {
+  display: flex;
+  flex-wrap: wrap; // Para reorganizar em telas menores
+  gap: clamp(8px, 1.5vw, 12px);
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: clamp(0.8rem, 1vw, 0.9rem); // Adaptativo
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: clamp(120px, 18vw, 200px); // Responsivo: mínimo 120px, máximo 200px
+    height: 40px;
+  }
+
+  .botaoEnviar {
+    background-color: #001a3d;
+    color: white;
+    border: none;
+
+    &:hover {
+      background-color: #002b5c;
+    }
+  }
+
+  .botaoCancel {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+
+    &:hover {
+      background-color: #c82333;
+    }
+  }
 }

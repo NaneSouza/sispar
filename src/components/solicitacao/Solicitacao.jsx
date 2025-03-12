@@ -176,14 +176,14 @@ function Solicitacao() {
                   {" "}
                   <img src={Motivo} alt="ícone do motivo" />
                 </td>
-                <td>Gosta muito de pagode </td>
-                <td>Tomar muita água</td>
-                <td>200</td>
+                <td>Viagem Admin.</td>
+                <td>1100110101 - FIN CONTABILIDADE </td>
+                <td>004</td>
                 <td>1</td>
                 <td>2</td>
                 <td>3</td>
                 <td>BRL</td>
-                <td>12</td>
+                <td>328</td>
                 <td>20</td>
                 <td>300</td>
               </tr>
@@ -201,14 +201,14 @@ function Solicitacao() {
                   {" "}
                   <img src={Motivo} alt="ícone do motivo" />
                 </td>
-                <td>Alunas do VnW </td>
-                <td>Ser Mãezona</td>
-                <td>100</td>
+                <td>Combustível</td>
+                <td>1100110101 - FIN CONTABILIDADE </td>
+                <td>003</td>
                 <td>4</td>
                 <td>3</td>
                 <td>1</td>
                 <td>BRL</td>
-                <td>10</td>
+                <td>456</td>
                 <td>30</td>
                 <td>200</td>
               </tr>
@@ -226,14 +226,14 @@ function Solicitacao() {
                   {" "}
                   <img src={Motivo} alt="ícone do motivo" />
                 </td>
-                <td>Consulta Otorrino</td>
-                <td>Cumprimentar acima dB adequados </td>
-                <td>250</td>
+                <td>Viagem Admin.</td>
+                <td>1100110101 - FIN CONTABILIDADE </td>
+                <td>002</td>
                 <td>5</td>
                 <td>3</td>
                 <td>8</td>
                 <td>BRL</td>
-                <td>14</td>
+                <td>378</td>
                 <td>50</td>
                 <td>100</td>
               </tr>
@@ -251,14 +251,14 @@ function Solicitacao() {
                   {" "}
                   <img src={Motivo} alt="ícone do motivo" />
                 </td>
-                <td>Alunos do VnW </td>
-                <td>Aconselhar</td>
-                <td>300</td>
+                <td>Eventos de repre</td>
+                <td>1100110101 - FIN CONTABILIDADE </td>
+                <td>001</td>
                 <td>3</td>
                 <td>1</td>
                 <td>2</td>
                 <td>BRL</td>
-                <td>13</td>
+                <td>289</td>
                 <td>40</td>
                 <td>400</td>
               </tr>
